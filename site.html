@@ -1,0 +1,43 @@
+<html>
+<title>PULT</title>
+<head></head>
+<style>
+.grid-container
+{
+width: 90vw;
+height: 90vh;
+display: grid;
+grid-template-columns: auto auto auto auto;
+background-color: #2196F3; 
+padding: 20px;
+}
+
+.grid-item 
+{ 
+text-align: center;
+}
+</style>
+<body>
+<div class="grid-container">
+<div></div><div></div><div></div>
+<button class=onoff onclick="goto('/onoff')">ON/OFF</button>
+<div></div>
+<button class=back onclick="goto('/back')">BACK</button>
+<div></div>
+<button class=home onclick="goto('/home')">HOME</button>
+<button class=volup onclick="goto('/volup')">VOL+</button>
+<div></div>
+<button class=up onclick="goto('/up')">UP</button>
+<div></div><div></div>
+<button class=left onclick="goto('/left')">LEFT</button>
+<button class=select onclick="goto('/select')">SELECT</button>
+<button class=right onclick="goto('/right')">RIGHT</button>
+<button class=voldown onclick="goto('/voldown')">VOL-</button>
+<div></div>
+<button class=down onclick="goto('/down')">DOWN</button>
+<div></div></div>
+<script>
+unction goto(ss) {document.location = ss;}
+</script>
+</body>
+</html>
