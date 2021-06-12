@@ -10,9 +10,9 @@ void carrier(unsigned int dur) {
   int k;
   for (k=0; k<(dur/14); k++) {
     digitalWrite(IR_PIN, HIGH);
-    delayMicroseconds(7);//sub_dur1);
+    delayMicroseconds(11);//sub_dur1);
     digitalWrite(IR_PIN, LOW);
-    delayMicroseconds(7);//sub_dur2);
+    delayMicroseconds(10);//sub_dur2);
   }
 }
 
